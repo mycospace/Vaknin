@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hilfe für Betroffene – Narzisstische Muster erkennen & bewältigen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Notfallbanner (wichtig bei akuter Krise) -->
+  <div id="emergency-banner" role="alert">
+    <p>
+      <strong>Notfallhilfe:</strong> Wenn du dich in einer Krise befindest, wende dich bitte sofort an die 
+      <a href="tel:08001110111">Telefonseelsorge (0800 111 0111)</a> oder an andere Notrufnummern.
+      Du bist nicht allein!
+    </p>
+  </div>
+  
+  <!-- Header mit Dark Mode Toggle -->
+  <header>
+    <div class="header-container">
+      <h1>Hilfe für Betroffene – Narzisstische Muster erkennen & bewältigen</h1>
+      <button id="darkModeToggle" aria-label="Dark Mode umschalten">Dark Mode</button>
+    </div>
+    <p>Informationen, Instrumente und Ressourcen zur Unterstützung von Betroffenen</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#drei-rs" class="nav-link">Die Drei R’s</a></li>
+      <li><a href="#hers" class="nav-link">H.E.R.S.-Skala</a></li>
+      <li><a href="#s1s2" class="nav-link">S1/S2-Score</a></li>
+      <li><a href="#strategie" class="nav-link">Erkennen, Befreien & Heilen</a></li>
+      <li><a href="#ressourcen" class="nav-link">Ressourcen</a></li>
+      <li><a href="#kontakt" class="nav-link">Kontakt & Feedback</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hauptinhalt -->
+  <main>
+    <!-- Abschnitt 1: Die Drei R’s -->
+    <section id="drei-rs">
+      <h2>Die Drei R’s – Remorse, Remediation, Restoration</h2>
+      <p>Dieses Modell dient dazu, den Unterschied zwischen authentischer und inszenierter Reue bei narzisstischen Persönlichkeiten zu erkennen.</p>
+      <ul>
+        <li>
+          <strong>Remorse (Reue):</strong>
+          <ul>
+            <li><em>Authentisch:</em> Wiederholtes, öffentlich gezeigtes Eingeständnis mit echter Scham und persönlichem Opfer.</li>
+            <li><em>Narzisstisch:</em> Kurzlebige, private oder oberflächliche Reue; oft reagiert der Betroffene bei Hinterfragen mit Aggression.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Remediation (Wiedergutmachung):</strong>
+          <ul>
+            <li><em>Authentisch:</em> Angemessene und symbolisch dem Schaden entsprechende Reparationsmaßnahmen.</li>
+            <li><em>Narzisstisch:</em> Minimierung des Fehlverhaltens oder gar kein Angebot zur Wiedergutmachung; häufig wird das Fehlverhalten geleugnet.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Restoration (Wiederherstellung/Abschluss):</strong>
+          <ul>
+            <li><em>Authentisch:</em> Schafft Raum für Abschluss und Heilung beim Opfer.</li>
+            <li><em>Narzisstisch:</em> Verhindert die Verarbeitung des erlittenen Schadens, leugnet den Missbrauch oder schiebt die Schuld ab.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Abschnitt 2: H.E.R.S.-Skala -->
+    <section id="hers">
+      <h2>H.E.R.S.-Skala (Heartbreak and Recovery Scale)</h2>
+      <p>Dieses Instrument wird vor allem in intimen Beziehungen verwendet, um die Reaktion (Modification) eines Narzissten nach einem traumatischen Beziehungsausgang einzuschätzen. Beantworte die folgenden Fragen:</p>
+      <ul>
+        <li><strong>Frage 1:</strong> Kam das Ereignis überraschend oder war es das Ergebnis eines lang sichtbaren Prozesses?</li>
+        <li><strong>Frage 2:</strong> Wurde der/die Betroffene in der Öffentlichkeit oder vor Peers gedemütigt?</li>
+        <li><strong>Frage 3:</strong> Reagierte der Narzisst mit anhaltender Wut oder Rage, auch nach der Situation?</li>
+        <li><strong>Frage 4:</strong> Führte das Ereignis zu negativen, automatischen Selbstabwertungsgedanken?</li>
+        <li><strong>Frage 5:</strong> Versetzte das Ereignis in einen Zustand anhaltender Dysphorie (Anhedonie)?</li>
+        <li><strong>Frage 6:</strong> Wurden extreme emotionale Reaktionen (z. B. romantische Eifersucht) erlebt?</li>
+      </ul>
+      
+      <div class="quiz-container">
+        <h3>Interaktives H.E.R.S.-Quiz</h3>
+        <form id="hersQuiz">
+          <div class="quiz-question">
+            <p>1. Kam das Ereignis überraschend?</p>
+            <label><input type="radio" name="q1" value="1" required> Ja</label>
+            <label><input type="radio" name="q1" value="0"> Nein</label>
+          </div>
+          <div class="quiz-question">
+            <p>2. Wurde in der Öffentlichkeit gedemütigt?</p>
+            <label><input type="radio" name="q2" value="1" required> Ja</label>
+            <label><input type="radio" name="q2" value="0"> Nein</label>
+          </div>
+          <div class="quiz-question">
+            <p>3. Kam es zu anhaltender Wut/Rage?</p>
+            <label><input type="radio" name="q3" value="1" required> Ja</label>
+            <label><input type="radio" name="q3" value="0"> Nein</label>
+          </div>
+          <div class="quiz-question">
+            <p>4. Traten negative, automatische Selbstabwertungsgedanken auf?</p>
+            <label><input type="radio" name="q4" value="1" required> Ja</label>
+            <label><input type="radio" name="q4" value="0"> Nein</label>
+          </div>
+          <div class="quiz-question">
+            <p>5. Führte das Ereignis zu einem Zustand, in dem nichts Freude machte (Anhedonie)?</p>
+            <label><input type="radio" name="q5" value="1" required> Ja</label>
+            <label><input type="radio" name="q5" value="0"> Nein</label>
+          </div>
+          <div class="quiz-question">
+            <p>6. Wurden extreme emotionale Reaktionen (z. B. romantische Eifersucht) erlebt?</p>
+            <label><input type="radio" name="q6" value="1" required> Ja</label>
+            <label><input type="radio" name="q6" value="0"> Nein</label>
+          </div>
+          <button type="submit">Quiz auswerten</button>
+        </form>
+        <div id="quizResult" class="quiz-result" style="display:none;"></div>
+      </div>
+    </section>
+
+    <!-- Abschnitt 3: S1/S2-Score -->
+    <section id="s1s2">
+      <h2>S1/S2-Score: Promiskuität und Selbstwirksamkeit</h2>
+      <p>Dieses Instrument untersucht zwei zentrale Parameter:</p>
+      <ul>
+        <li>
+          <strong>S1 – Promiskuität:</strong>
+          <ul>
+            <li>Indisziplinierte, häufig wechselnde sexuelle Kontakte (z. B. Gruppensex, wiederholtes Fremdgehen, Casual Sex).</li>
+            <li>Verhaltensmuster, die den Narzissten besonders anfällig für die Aneignung einer „Versorgungsquelle“ machen.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>S2 – Selbstwirksamkeit:</strong>
+          <ul>
+            <li>Eigenschaften wie Organisation, Zielstrebigkeit, Kompetenz und Stabilität.</li>
+            <li>Eine gelungene Kombination aus S1 und S2 (auch wenn widersprüchlich) kann den Narzissten besonders anziehen.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Abschnitt 4: Erkennen, Befreien & Heilen -->
+    <section id="strategie">
+      <h2>Erkennen, Befreien & Heilen</h2>
+      <p>Das Wissen um narzisstische Verhaltensmuster hilft dabei, sich zu schützen und den Heilungsprozess einzuleiten:</p>
+      <ul>
+        <li><strong>Erkennen:</strong> Authentische Reue, echte Wiedergutmachung und der Raum zur Verarbeitung unterscheiden gesunde Reaktionen von narzisstischer Inszenierung.</li>
+        <li><strong>Befreiung:</strong> Das frühzeitige Erkennen typischer Muster (z. B. aggressive Abwehr, Hoovering) ermöglicht es, klare Grenzen zu setzen und sich emotional zu distanzieren.</li>
+        <li><strong>Heilung:</strong> Durch Selbstreflexion, professionelle Unterstützung und das Bewusstsein um eigene Bedürfnisse kann ein nachhaltiger Heilungsprozess eingeleitet werden.</li>
+      </ul>
+    </section>
+
+    <!-- Abschnitt 5: Ressourcen -->
+    <section id="ressourcen">
+      <h2>Ressourcen & Weiterführende Informationen</h2>
+      <p>Hier findest du weiterführende Artikel, Videos, Literaturtipps und Links zu Beratungsstellen:</p>
+      <ul>
+        <li><a href="https://www.telefonseelsorge.de" target="_blank">Telefonseelsorge</a></li>
+        <li><a href="https://www.narzissmus.de" target="_blank">Informationen zu Narzissmus</a></li>
+        <li><a href="https://www.selbsthilfe.de" target="_blank">Selbsthilfegruppen</a></li>
+        <li><a href="https://www.psycho-hilfe.de" target="_blank">Psychologische Beratung</a></li>
+      </ul>
+    </section>
+
+    <!-- Abschnitt 6: Kontakt & Feedback -->
+    <section id="kontakt">
+      <h2>Kontakt & Feedback</h2>
+      <p>Wir möchten Betroffenen bestmöglich helfen. Falls du Fragen hast, Unterstützung benötigst oder uns Feedback geben möchtest, kontaktiere uns bitte über das folgende Formular. Deine Daten werden anonym und vertraulich behandelt.</p>
+      <form id="contactForm">
+        <label for="name">Name (optional):</label>
+        <input type="text" id="name" name="name" placeholder="Dein Name">
+        <label for="email">E-Mail (optional):</label>
+        <input type="email" id="email" name="email" placeholder="Deine E-Mail">
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" placeholder="Schreibe hier deine Nachricht oder dein Feedback..." required></textarea>
+        <button type="submit">Absenden</button>
+      </form>
+      <div id="contactResult" class="contact-result" style="display:none;"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 - Hilfe für Betroffene: Narzisstische Muster erkennen & bewältigen</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+          </html>
