@@ -1,0 +1,232 @@
+/* Reset und Grundstile */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* CSS Variablen für Light/Dark Mode */
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --header-bg: #4a90e2;
+  --nav-bg: #333;
+  --button-bg: #4a90e2;
+  --button-bg-hover: #357ab8;
+  --quiz-result-bg: #e2f7e2;
+  --quiz-result-border: #4caf50;
+}
+
+body.dark-mode {
+  --background-color: #222;
+  --text-color: #ddd;
+  --header-bg: #333;
+  --nav-bg: #444;
+  --button-bg: #357ab8;
+  --button-bg-hover: #4a90e2;
+  --quiz-result-bg: #555;
+  --quiz-result-border: #888;
+}
+
+/* Allgemeine Elemente */
+body, p, h1, h2, h3, li, a {
+  color: var(--text-color);
+}
+
+header, nav, main, section, footer {
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Emergency Banner */
+#emergency-banner {
+  background: #ffdddd;
+  color: #a00;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+/* Header */
+header {
+  background: var(--header-bg);
+  color: #fff;
+  text-align: center;
+  padding: 1.5em 1em;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+  background: var(--button-bg);
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#darkModeToggle:hover {
+  background: var(--button-bg-hover);
+}
+
+/* Navigation */
+nav {
+  background: var(--nav-bg);
+  margin-top: 1em;
+  border-radius: 4px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  display: block;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  background: var(--header-bg);
+}
+
+/* Main Content */
+main {
+  margin-top: 1em;
+  background: var(--background-color);
+  padding: 2em;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+section h2 {
+  border-bottom: 2px solid var(--header-bg);
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Listen */
+ul {
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Quiz Formular */
+.quiz-container {
+  background: #f1f1f1;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+body.dark-mode .quiz-container {
+  background: #333;
+}
+
+.quiz-question {
+  margin-bottom: 1em;
+}
+
+.quiz-question label {
+  margin-right: 1em;
+}
+
+.quiz-result {
+  margin-top: 1em;
+  padding: 1em;
+  background: var(--quiz-result-bg);
+  border: 1px solid var(--quiz-result-border);
+  border-radius: 4px;
+}
+
+/* Kontakt Formular */
+form label {
+  display: block;
+  margin-top: 0.75em;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.25em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 1em;
+  background: var(--button-bg);
+  color: #fff;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form button:hover {
+  background: var(--button-bg-hover);
+}
+
+.contact-result {
+  margin-top: 1em;
+  padding: 1em;
+  background: var(--quiz-result-bg);
+  border: 1px solid var(--quiz-result-border);
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: var(--nav-bg);
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 1.8em;
+  }
+}
